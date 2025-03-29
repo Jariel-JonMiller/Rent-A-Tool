@@ -4,74 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rent-A-Tool</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index-styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Welcome to Rent-A-Tool</h1>
-        <p>Find the perfect tool for your project.</p>
-        <button>Get Started</button>
+        <div class="header-left">
+            <img src="RAT-images/logo.jpg" alt="Logo">
+        </div>
+        <div class="header-center">
+            <h1>Rent-A-Tool</h1>
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tools</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search in site">
+            <button>🔍</button>
+        </div>
     </header>
+
+    <section class="welcome" id="broadheader">
+        <div class="welcome-content">
+            <h1>Welcome to Rent-A-Tool</h1>
+            <p>Rent out your tools or find the tools you need</p>
+            <button class="cta">Get Started</button>
+        </div>
+    </section>
 
     <section id="why">
         <h2>Why Rent-A-Tool?</h2>
+        <h4>A platform for tool owners and renters to connect</h4>
+        <button class="learn-more">Learn More</button>
         <div class="features">
             <div class="feature">
-                <h3>Save Money</h3>
-                <p>Rent tools without buying them.</p>
+                <img class="feature_blankperson" src="RAT-images/blankperson.png" alt="blank person image">
+                <div id="feature-content">
+                    <h3>Save Money</h3>
+                    <p>Rent tools without buying them.</p>
+                    <p>💰 🛠</p>
+                </div>
             </div>
             <div class="feature">
-                <h3>More Flexible</h3>
-                <p>Use tools for the time you need.</p>
+                <img class="feature_blankperson" src="RAT-images/blankperson.png" alt="blank person image">
+                <div id="feature-content">
+                    <h3>More Flexible</h3>
+                    <p>Use tools for the time you need.</p>
+                    <p>💰 🛠</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="featured-tools">
-        <h2>Featured Tools</h2>
+        <div class="featured-tools-container">
+            <img src="RAT-images/blankperson.png" alt="">
+            <div class="featured-tools-content">
+                <h2>Featured Tools</h2>
+                <p>Popular tools available for rent</p>
+                <button>View All</button>
+            </div>
+        </div>
         <div class="tools-container">
             <div class="tool">
-                <h3>Drill Kit</h3>
-                <p>High-quality drill set for professionals.</p>
+                <img src="RAT-images/electric-drill.jpg" alt="">
+                <h3>Electric Drill</h3>
+                <p>Rent Now</p>
+                <p>⭐ 🔍</p>
             </div>
             <div class="tool">
-                <h3>Power Saw</h3>
-                <p>Perfect for wood cutting projects.</p>
+                <img src="RAT-images/pressure-washer.jpeg" alt="">
+                <h3>Pressure Washer</h3>
+                <p>Rent Now</p>
+                <p>⭐ 🔍</p>
             </div>
             <div class="tool">
-                <h3>Chainsaw</h3>
-                <p>Durable chainsaw for outdoor work.</p>
+                <img src="RAT-images/circular-saw.jpeg" alt="">
+                <h3>Circular Saw</h3>
+                <p>Rent Now</p>
+                <p>⭐ 🔍</p>
             </div>
         </div>
     </section>
 
-    <section id="community">
-        <h2>Join Our Community</h2>
-        <p>Sign up to get exclusive deals and offers.</p>
-        <button>Sign Up</button>
+    <section class="join-community" id="broadheader">
+        <div class="join-community-content">
+            <img src="RAT-images/logo.jpg" alt="">
+            <span>
+                <h2>Join Our Community</h2>
+                <span id="tags">
+                    <p class="tag">Tool Enthusiasts</p>
+                    <p class="tag">Sharing Economy</p>
+                </span>
+                <p>Sign up to get exclusive deals and offers.</p>
+            </span>
+                <button>Sign Up</button>
+        </div>
     </section>
 
     <section id="reviews">
         <div class="review-left">
             <h2>User Reviews</h2>
-            <h3>Hello</h3>
+            <p>Hear from our satisfied users</p>
+            <button>Write a Review</button>
         </div>
         <div class="review-right">
             <div class="review">
-                <p>"Great service, easy to rent!" - ⭐⭐⭐⭐⭐</p>
+                <span class="review-heading">
+                    <img src="RAT-images/blankperson.png" alt="">
+                    <h3>User456</h3>
+                    <p>⭐⭐⭐⭐⭐</p>
+                </span>
+                <p>Great service, easy to rent!</p>
+                <p>👍 👎</p>
             </div>
             <div class="review">
-                <p>"Affordable and reliable tools." - ⭐⭐⭐⭐⭐</p>
+                <span class="review-heading">
+                    <img src="RAT-images/blankperson.png" alt="">
+                    <h3>ToolPro123</h3>
+                    <p>⭐⭐⭐⭐⭐</p>
+                </span>
+                <p>Affordable and reliable tools.</p>
+                <p>👍 👎</p>
             </div>
         </div>
     </section>
 
+    <section id="rent-box">
+        <p>Start renting and sharing tools today!</p>
+    </section>
+
     <footer>
-        <p>© 2025 Rent-A-Tool. All rights reserved.</p>
-        <a href="#">Privacy Policy</a> | 
-        <a href="#">Terms of Service</a> | 
-        <a href="#">Contact Us</a>
+        <span class="footer-content">
+            <p>© 2025 Rent-A-Tool. All rights reserved.</p>
+            <a href="#">Privacy Policy</a> 
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </span>
     </footer>
 </body>
 </html>
