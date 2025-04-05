@@ -1,0 +1,327 @@
+* { 
+    box-sizing: border-box; 
+}
+
+body { 
+    font-family: Arial, sans-serif; margin: 0; padding: 0; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 80px;
+    background-color: #f5f5f5;
+    color: black;
+    text-align: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    columns: 3;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-left img {
+    height: 60px; /* Adjust logo size */
+    width: 60px;
+    border-radius: 50%;
+}
+
+.header-center {
+    flex-grow: 1; /* Centers the title */
+    text-align: center;
+}
+
+.header-center h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-right nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.header-right nav ul li {
+    display: inline;
+}
+
+.header-right nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 70px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    max-width: 40vw;
+    width: 100%;
+    padding: 5px;
+}
+
+.search-bar button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.container { 
+    width: 80%; 
+    margin: auto; 
+    padding: 20px; 
+}
+
+.additional-info { 
+    text-align: center; 
+    padding-top: 8vh; 
+}
+
+.tool-details { 
+    display: flex; 
+    gap: 2vw; 
+    margin-top: 15vh;
+    margin-bottom: 3vh; 
+}
+
+.tool-image { 
+    flex: 1; 
+}
+
+.tool-image img { 
+    border-radius: 8px; 
+    height: 99%;
+    width: 80%;
+}
+
+.tool-info { 
+    flex: 1; 
+    line-height: 2;
+}
+
+.tool-info h1 { 
+    font-size: 24px; 
+}
+
+.tool-info p { 
+    margin-bottom: 10px; 
+}
+
+.info-list { 
+    list-style: none; 
+    padding: 5vh 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4vh; 
+}
+
+.info-list li { 
+    display: flex; 
+    columns: 2; 
+    justify-content: space-between;
+}
+
+#label1 {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+}
+
+#label2 {
+    border-top: 0.1vh solid black;
+    border-bottom: 0.1vh solid black;
+    padding: 4vh 0;
+}
+
+.label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.value {
+    text-align: right;
+    padding-right: 0.5vw;
+    width: 70%;
+}
+
+.btn { 
+    padding: 10px 20px; 
+    background-color: #000; 
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    width: 15vw;
+}
+
+.additional-info { 
+    margin-top: 40px; 
+}
+
+.additional-info-cards { 
+    display: flex; 
+    gap: 3vw; 
+    justify-content: left;
+    margin: 12vh 0;
+    background-color: pink; 
+}
+
+.card { 
+    padding: 1vw; 
+    border: 2px solid #ddd; 
+    border-radius: 8px; 
+    width: 50%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    max-width: 5vw;
+    max-height: 5vw;
+    margin: 0 1vw; 
+}
+
+.reviews-section {
+    margin-top: 14vh;
+    flex: 2;
+    display: flex;
+    gap: 2vw;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    background: #f1f0f0;
+    margin: 1vh auto;
+    padding: 0 2vw 4vw;
+    border-radius: 5px;
+    text-align: left;
+    line-height: 0.5;
+    flex: 1;
+}
+
+.review-heading {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+
+.review-heading img {
+    max-width: 2.5vw;
+    max-height: 2.5vw;
+    border-radius: 50%;
+}
+
+.rental-request {
+    display: flex;
+    margin: 17vh 0;
+    max-width: 100%;
+    gap: auto;
+}
+
+.rental-request-heading {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 0.5;
+}
+
+.rental-request-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 2vw;
+    padding-left: 1vw;
+}
+
+.rental-request-content div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.rental-request-content p {
+    margin: 0 0 5px 0;
+    font-weight: bold;
+}
+
+.rental-request-content input {
+    width: 99%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1.5px solid gainsboro;
+    border-radius: 5px;
+}
+
+.rental-request-content button {
+    margin-top: 2vh;
+    padding: 1.4vh 1.4vh;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 1vh;
+    cursor: pointer;
+    margin-top: 10px;
+    max-width: 15vw;
+    max-height: 7vh;
+    width: 15vw;
+    font-size: 15px;
+    font-weight: bold;
+}
+/*RENT BLANK BOX*/
+#rent-box {
+    margin: 12vh 0;
+    max-width: 100%;
+    max-height: 100%;
+    height: 35vh;
+    background-color: #e1e1e1;
+    border-radius: 2vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+/*FOOTER section*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    color: black;
+}
+
+.footer-content {
+    margin: 0 11vw;
+    padding: 2vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+

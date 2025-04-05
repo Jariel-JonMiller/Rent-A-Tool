@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent-A-Tool</title>
+    <link rel="stylesheet" href="listRentals-styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="RAT-images/logo.jpg" alt="Logo">
+        </div>
+        <div class="header-center">
+            <h1>Rent-A-Tool</h1>
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search in site">
+            <button>🔍</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="tool-details-header">
+            <h1>Tool Details</h1>
+            <p>Explore detailed information about the selected tool below.</p>
+        </div>
+        <div class="tool-details">
+            <div class="tool-image">
+                <img src="RAT-images/electric-drill.jpg" alt="Power Drill">
+            </div>
+            <div class="tool-info">
+                <h1>Tool Name: Power Drill</h1>
+                <p>Rent this tool for your DIY projects</p>
+                <button class="btn">Request Rental</button>
+                <ul class="info-list">
+                    <li>
+                        <span class="label" id="label1">
+                            <p>👤 Owner: </p>
+                            <p></span>John Doe</p>
+                        </span>
+                        <span class="value">johndoe@example.com</span>
+                    </li>
+                    <li id="label2">
+                        <span class="label">💵 Rental Price:</span>
+                        <span class="value">$15/day</span>
+                    </li>
+                    <li>
+                        <span class="label">✅ Availability:</span>
+                        <span class="value">Available</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="additional-info">
+            <h2>Additional Information</h2>
+            <p>More details about the tool</p>
+            <button class="btn">Contact Owner</button>
+            <div class="additional-info-cards">
+                <div class="card">
+                    <img src="RAT-images/blankperson.png" alt="">
+                    <span>
+                        <h3>Description</h3>
+                        <p>Handy tool with rubber grip and new drill-bit</p>
+                    </span>
+                    </div>
+                <div class="card">
+                    <img src="RAT-images/blankperson.png" alt="">
+                    <span>
+                        <h3>Condition</h3>
+                        <p>Slightly used, in good working condition.</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="user-reviews">
+            <h1>User Reviews</h1>
+            <p>See what others say about this tool</p>
+            <button class="btn">Write a Review</button>
+            <div class="reviews-section">
+                <div class="review">
+                    <span class="review-heading">
+                        <img src="RAT-images/blankperson.png" alt="">
+                        <h3>ToolUser123</h3>
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </span>
+                    <p>Great tool for home projects</p>
+                </div>
+                <div class="review">
+                    <span class="review-heading">
+                        <img src="RAT-images/blankperson.png" alt="">
+                        <h3>User456</h3>
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </span>
+                    <p>Very Reliable. Would recommend.</p>
+                </div>
+            </div>
+        </div>
+        <div class="rental-request">
+            <div class="rental-request-heading">
+                <h1>Request Rental</h1>
+                <p>Fill in the required details to request the rental</p>
+            </div>
+            <div class="rental-request-content">
+                <div>
+                    <p>Start Date</p>
+                    <input type="text" placeholder="Select date">
+                </div>
+                <div>
+                    <p>End Date</p>
+                    <input type="text" placeholder="Select date">
+                </div>
+                <div>
+                    <p>Message to Owner</p>
+                    <input type="text" placeholder="Type your message here">
+                </div>
+                <button>Submit Request</button>
+            </div>
+        </div>
+        <section id="rent-box">
+            <p>Rent-A-Tool - Connecting tool owners and renters efficiently.</p>
+        </section>
+    </div>
+
+    <footer>
+        <span class="footer-content">
+            <p>© 2025 Rent-A-Tool. All rights reserved.</p>
+            <a href="#">About Us</a> 
+            <a href="#">Contact Us</a>
+            <a href="#">Terms and Conditions</a>
+        </span>
+    </footer>
+
+</body>
+</html>
