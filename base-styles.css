@@ -1,0 +1,114 @@
+* { 
+    box-sizing: border-box; 
+}
+
+body { 
+    font-family: Arial, sans-serif; margin: 0; padding: 0; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 80px;
+    background-color: #f5f5f5;
+    color: black;
+    text-align: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    columns: 3;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-left img {
+    height: 60px; /* Adjust logo size */
+    width: 60px;
+    border-radius: 50%;
+}
+
+.header-center {
+    flex-grow: 1; /* Centers the title */
+    text-align: center;
+}
+
+.header-center h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-right nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.header-right nav ul li {
+    display: inline;
+}
+
+.header-right nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 70px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    max-width: 40vw;
+    width: 100%;
+    padding: 5px;
+}
+
+.search-bar button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.container { 
+    width: 80%; 
+    margin: auto; 
+    padding: 20px; 
+    background-color: yellow;
+}
+
+.btn { 
+    padding: 10px 20px; 
+    background-color: #000; 
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    width: 15vw;
+}
+
+/*FOOTER section*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    color: black;
+}
+
+.footer-content {
+    margin: 0 11vw;
+    padding: 2vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
