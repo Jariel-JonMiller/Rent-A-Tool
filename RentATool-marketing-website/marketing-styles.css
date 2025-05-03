@@ -1,0 +1,251 @@
+:root {
+    --primary-color: #6c63ff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    gap: 2rem;
+}
+
+.logo img{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+}
+    
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-direction: column;
+    margin-right: 10rem;
+}
+
+.header-right h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header-right p {
+    margin: 1.5rem 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: black; /* Change to any color you like */
+    background-color: rgb(113, 41, 196);
+}
+
+section {
+    padding: 3rem 2rem;
+    max-width: 62.5rem;
+    margin: auto;
+}
+
+h2 {
+    color: white;
+    background-color: var(--primary-color);
+    margin: 0 0 1rem 0;
+    padding: 0.5rem 0.5rem;
+}
+
+#about p {
+    font-size: 1rem;
+    line-height: 2;
+    text-align: justify;
+}
+
+#about img {
+    width: 50vw;
+    height: 10vw;
+    /* border-radius: 5%; */
+}
+
+/* Slider styles */
+.slider {
+    width: 100%;
+    max-width: 72vw;
+    overflow: hidden;
+    margin: auto;
+}
+  
+.slider-track {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: max-content;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+  
+.slider img {
+    width: 20vw;
+    height: 40vh;
+    object-fit: cover;
+    flex-shrink: 0;
+}  
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.how-card-left {
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.left-title {
+    font-size: 1rem;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto 0;
+}
+
+.left-title img {
+    width: 60%;
+    height: 40vh;
+    border-radius: 50%;
+}
+
+.how-card-right {
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.right-title {
+    font-size: 1rem;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto 0;
+}
+
+.how-card-left img, .how-card-right img {
+    width: 60%;
+    height: 40vh;
+}
+
+.material-symbols-outlined {
+    font-size: 3.5rem !important;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 2%;
+    border-radius: 50%;
+}  
+
+/**/
+
+.perks {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.perk-card-top {
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 26.4%;
+}
+
+.top-title {
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto 0;
+}
+
+.perk-card-top img, .perk-card-top img {
+    /*width: 60%;*/
+    height: 40vh;
+}
+
+.team {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    flex: 1 1;
+}
+ 
+#card-top {
+    margin-bottom: 10rem;
+    background-color: white;
+    color: var(--primary-color);
+}
+
+#card-bottom {
+    margin-top: 10rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+  
+.contact-form button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+  
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #eee;
+}
