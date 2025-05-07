@@ -21,13 +21,30 @@ window.addEventListener('DOMContentLoaded', () => {
         return Math.floor(sliderWidth / imageWidthAndGap);
     }
   
-    setInterval(() => {
+    function getMaxOffset() {
+        const totalWidth = getImageWidthAndGap() * images.length - (parseFloat(window.getComputedStyle(track).gap) || 0);
+        const sliderWidth = slider.getBoundingClientRect().width;
+        return totalWidth - sliderWidth;
+    }
+  
+    function slide() {
         index++;
         const visibleCount = getVisibleCount();
         if (index > images.length - visibleCount) index = 0;
-        const offset = getImageWidthAndGap() * index;
+        let offset = getImageWidthAndGap() * index;
+        const maxOffset = getMaxOffset();
+        if (offset > maxOffset) offset = maxOffset;
         track.style.transform = `translateX(-${offset}px)`;
-    }, 3000);
+    }
+  
+    let slideInterval = setInterval(slide, 3000);
+  
+    window.addEventListener('resize', () => {
+        clearInterval(slideInterval);
+        index = 0;
+        track.style.transform = `translateX(0)`;
+        slideInterval = setInterval(slide, 3000);
+    });
   
     // Basic client-side contact form validation feedback
     document.querySelector('.contact-form').addEventListener('submit', function(e) {
