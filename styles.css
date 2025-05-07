@@ -124,7 +124,7 @@ h2 {
 /* Slider styles */
 .slider {
     width: 100%;
-    max-width: 720px;
+    max-width: 900px;
     overflow: hidden;
     margin: 2rem auto;
     position: relative;
@@ -141,8 +141,8 @@ h2 {
 }
   
 .slider img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
     flex-shrink: 0;
     border-radius: 8px;
